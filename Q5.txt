@@ -1,0 +1,28 @@
+Koe Myint
+CMPE 131
+HW2a Python Q5
+
+Instructions:
+                                        
+• Review the code below and answer the following two questions:
+1. Does the change inside increment_int_a change the variable a after the function call?
+2. Does the change inside increment_int_b change the variable b after the function call? 
+3. If they differ answer why? if not why not?                                 
+                                        
+def increment_int_a(someval): 
+	someval += 1
+                                        
+def increment_int_b(someval): 
+	someval[0] += 1
+                                        
+def main(): 
+	a = 32
+        increment_int_a(a)
+                                        
+        b = [32]
+        increment_int_b(b)
+
+
+1. After the function call, increment_int_a doesn’t change the variable a. 
+2. After the function call, increment_int_b changes the variable b into [33]. 
+3. As for variable a, it doesn’t change since a is int type and it’s passing by value. And as for variable b, b is a list and it’s passing by reference, therefore it makes a change for variable b.
