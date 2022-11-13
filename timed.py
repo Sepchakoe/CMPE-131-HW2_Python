@@ -14,7 +14,7 @@ def timeme(func):
         func()
         end_time = time.time()
         totalTime = end_time - start_time
-        print("Total time: ", totalTime)
+        print("Total time", totalTime)
     return innerTime
     
 
